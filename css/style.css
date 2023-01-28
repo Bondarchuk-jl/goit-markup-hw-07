@@ -29,6 +29,7 @@ img {
     display: block;
     width: 100%;
     height: auto;
+    max-width: 100%;
 
 }
 /*скинути крапки у списках ліст*/
@@ -56,15 +57,15 @@ ul {
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
+/*скинути підкреслення на ссbлках*.*/
+.link {
+    text-decoration: none;
+}
+
 .header {
     padding-top: 24px;
     padding-bottom: 24px;
     border-bottom: 1px solid var(--bord-color);
-}
-
-/*скинути підкреслення на ссbлках*.*/
-.link {
-    text-decoration: none;
 }
 
 .navigation {
@@ -139,6 +140,23 @@ ul {
 .contact-adress:hover,
 .contact-adress:focus {
     color: var(--btn-navigation);
+}
+@media  screen and (min-width: 428px ) {
+    .container {
+        width: 428px;
+        padding-right: 15px;
+        padding-left: 15px;
+       
+    }
+    
+}
+@media screen and (max-width: 767px){
+    .navigation-list {
+        display: none;
+    }
+    .contacts {
+        display:none;
+    }
 }
 /* фокус для таба на интерактинвные элементы)*/
 /* Main */
@@ -228,21 +246,92 @@ ul {
 }
 
 .tehnology-list {
-    display: flex;
+   /* display: flex;*/
 }
 
 .tehnology-item {
-    margin-right: 24px; 
-    width: 264px; 
+    /*margin-right: 24px; 
+    width: 264px; */
+    padding-top: 72px;
 }
 .tehnology-item:last-child {
     margin-right: 0;
 }
+@media screen and (min-width:320px) {
+.container {
+        width: 428px;
+    }
+    .tehnology {
+        margin: 0 auto;
+    }
+        
+    .tehnology-item {
+    }
+    .tehnology-text {
+        font-weight: 700;
+        font-size: 36px;
+        text-align: center;
+    }
+
+}
+@media screen and (min-width: 768px) {
+    .container {
+        width: 767px;
+    }
+    .tehnology {
+        width: 768px;
+        margin: 0 auto;
+    }
+    .tehnology-list {
+        display: flex;
+        flex-wrap: wrap;
+        margin: ;
+    }
+    .tehnology-item {
+       width: calc((100% - 2 * 10px) / 2 );
+       margin: 5px;
+    }
+
+    .tehnology-text {
+        font-weight: 700;
+        font-size: 36px;
+        text-align: start;
+    }
+
+}
+@media screen and (min-width: 1200px){
+    .container {
+        width: 1199px;
+    }
+    .tehnology {
+        width: 1199px;
+        margin: 0 auto;
+    }
+    .texnology-list {
+        display: flex;
+        
+    }
+    .tehnology-item {
+        width: 264px;
+        margin-right: 24px;
+    }
+    .tehnology-item:last-child {
+        margin-right: 0;
+    }
+    
+    .tehnology-text {
+        font-weight: 500;
+        font-size: 20px;
+    }
+}
+
 /* section work*/
 
 .work {
     padding-top: 120px;
     padding-bottom: 120px;
+    /*padding-top: 100px;
+    padding-bottom: 100px;*/
 }
 
 .work-maintext,
@@ -263,8 +352,36 @@ ul {
 }
 
 .work-item {
+    height: 100%;
+}
+/* @media screen and (min-widht: 428px) {
+    .container {
+        width: 428px;
+    }
     
 }
+@media screen and (min-width: 768px) {
+    .container {
+        width: 768px;
+        
+    }
+    .work-item {
+        width: calc((100%-30px) / 2)
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .work {
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+    .container {
+        width: 1200px;
+    }
+    .work-item{
+        width: calc((100%-30px) /2);
+    }
+} */
 
 /*.work-link {}*/
 
@@ -448,7 +565,7 @@ ul {
 /**flexbox**/
 
  .container {
-    width: 1158px;
+   /* width: 1158px;*/
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
@@ -492,7 +609,7 @@ ul {
     cursor: pointer;
  }
  
- .tehnology-item::before {
+ /*.tehnology-item::before {
     margin-bottom: 8px;
     display: block;
     content: '';
@@ -506,7 +623,7 @@ ul {
   
     background-repeat: no-repeat;
     background-position: center;
-}
+}*/
 .icon-stategy::before {
     background-image: url(../images/antenna.svg);
 }
@@ -1032,3 +1149,37 @@ ul {
     right: 24px;
 }
 /*Адаптивная верстка*/
+
+/*@media screen and (min-device-pixel-ratio: 2),
+screen and (min-resolution: 192dpi),
+screen and (min-resolution: 2ddpx) {
+   .banner {
+    background-image: url(-mobile);
+   } 
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-widht: 1200px),
+screen and (min-resolution: 192dpi) and (min-widht: 1200px),
+screen and (min-resolution: 2ddpx) and (min-widht: 1200px) {
+    .banner {
+        background-image: url(-desctop);
+    }
+}*/
+/*
+@media screen and (min-width: 480px) {
+    .container {
+        background-color: #fff;
+    }
+    .text {
+        color: #2E2F42;
+    }
+}
+@media screen and (min-width: 768px) {
+    .container {
+        background-color: #fff;
+    }
+
+    .text {
+        color: #2E2F42;
+    }
+}*/
