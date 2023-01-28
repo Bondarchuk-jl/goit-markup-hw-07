@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/mobile.css" />
     <link rel="stylesheet" href="./css/tablet.css" />
-    <link rel="stylesheet" href="./css/desctop.css" />
+    <link rel="stylesheet" href="./css/desc-top.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
@@ -29,11 +29,9 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
-    <!--хедер-->
-    <header class="header">
+    <!-- <header class="header">
       <div class="container main-nav">
         <nav class="navigation">
-          <!--Navigation-->
           <a href="./index.html" class="logo-first link">
             WEB <span class="logo-second">STUDIO</span>
           </a>
@@ -54,24 +52,35 @@
             </li>
           </ul>
         </nav>
-
-        <ul class="contacts list">
-          <li class="navigation-contacts">
-            <a href="mailto:info@devstudio.com" class="contact-adress link"
-              >info@devstudio.com</a
-            >
-          </li>
-          <li class="navigation-contacts">
-            <a href="tel:+11000111-11-11" class="contact-adress link"
-              >+11 (000) 111-11-11</a
-            >
-          </li>
-        </ul>
+      </div>
+      <ul class="contacts list">
+        <li class="navigation-contacts">
+          <a href="mailto:info@devstudio.com" class="contact-adress link"
+            >info@devstudio.com</a
+          >
+        </li>
+        <li class="navigation-contacts">
+          <a href="tel:+11000111-11-11" class="contact-adress link"
+            >+11 (000) 111-11-11</a
+          >
+        </li>
+      </ul> -->
+     <!--  <button type="button" class="menu-open-burger" data-menu-open>
+        <svg class="burger-icon" width="32" height="22">
+          <use href="./images/icons.svg#icon-burger"></use>
+        </svg>
+      </button>
+      <div class="mob-menu">
+        <button class="menu-close" data-menu-close>
+          <svg class="menu-close-icon" width="32" height="22">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button> -->
       </div>
     </header>
-
+    -->
     <main class="hero">
-      <!--Головна-->
+      <!-- Головна-->
 
       <!-- <section class="hero-main overlay">
         <div class="container">
@@ -80,7 +89,8 @@
             Order Service
           </button>
         </div>
-      </section> -->
+      </section>  -->
+
       <!--Типи технологій-->
       <!-- <section class="tehnology">
         <div class="container">
@@ -153,7 +163,7 @@
 
       <!--Our team-->
       <!--All class begin "about"-->
-      <!-- <section class="about">
+ <!--      <section class="about">
         <div class="container">
           <h2 class="about-maintext">Our Team</h2>
           <ul class="about-list list">
@@ -321,9 +331,9 @@
           </ul>
         </div>
       </section> -->
-      <!-- <section class="customers">
+      <section class="customers">
         <div class="container">
-          <h2 class="about-maintext">Customers</h2>
+          <h2 class="customers-maintext">Customers</h2>
           <ul class="customers-list list">
             <li class="customers-item">
               <a href="" class="customers-link">
@@ -369,7 +379,7 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
     </main>
 
     <!-- футер-->
@@ -533,6 +543,7 @@
       AOS.init();
     </script>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
     <script>
       (() => {
         document
