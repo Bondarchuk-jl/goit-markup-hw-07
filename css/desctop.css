@@ -89,7 +89,7 @@
 
 }
 
-@media  screen and (min-width: 428px ) {
+/* @media  screen and (min-width: 428px ) {
     .container {
         width: 428px;
         padding-right: 15px;
@@ -105,7 +105,7 @@
     .contacts {
         display:none;
     } 
-}
+} */
 /* фокус для таба на интерактинвные элементы)*/
 /* Main */
 /* Section hero*/
