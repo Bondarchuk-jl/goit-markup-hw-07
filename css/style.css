@@ -96,7 +96,7 @@ ul {
 
 .navigation-item {
     margin-right: 40px;
-    margin-left: auto;
+    /* margin-left: auto; */
 }
 .navigation-item:last-child {
     margin-right: 0;
@@ -128,6 +128,7 @@ ul {
  .contact-adress {
     font-style: normal;
     font-weight: 400;
+    font-size: 12px;
     color: var(--gray-color); 
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -139,14 +140,6 @@ ul {
 .contact-adress:focus {
     color: var(--btn-navigation);
 }
-
-/* @media screen and (max-width: 767px){
-    .navigation-list {
-        display: none;
-    }
-    .contacts {
-        display:none;
-    }  */
 
 /* фокус для таба на интерактинвные элементы)*/
 /* Section hero*/
@@ -165,7 +158,8 @@ ul {
 
 .hero-text {
     font-weight: 700;
-    font-size: 56px;
+    /* font-size: 56px; */
+    font-size: 36px;
     line-height: 1.07;
     /* width: 318px; */
     margin-top: 0;
@@ -708,11 +702,11 @@ ul {
 
 .modal {
     position: absolute ;
-    top: 88px;
-    left: 516px;
-    /*top: 50%;
+    /* top: 88px;
+    left: 516px; */
+    top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);*/
+    transform: translate(-50%, -50%);
 
     width: 408px;
     min-height: 576px;
@@ -722,7 +716,7 @@ ul {
     background: #FCFCFC;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 2px 1px rgba(0, 0, 0, 0.2);
-    transform:  scale(1);
+    /* transform:  scale(1); */
     transition: transform 250ms linear;
 }
 .modal-close { 
@@ -987,6 +981,7 @@ ul {
 
 .subscribe {
     margin-top: 72px ;
+    
     /* margin-left: 80px; */
 }
 
@@ -1005,7 +1000,8 @@ ul {
 
 .subscribe-input {
     /* width: 264px; */
-    width: 396px;
+    /* width: 396px; */
+    width: 100%;
     height: 40px;
 
     padding-left: 16px;
@@ -1027,14 +1023,15 @@ ul {
 }
 
 .subscribe-buttom {
-    display: inline-block;
-    
+    display: block;
+    position: relative;
     font-family: inherit;
     font-weight: 500;
     font-size: 16px;
     color: var(--main-color);
     letter-spacing: 0.04em;
-
+    margin-left: auto;
+    margin-right: auto;
     width: 165px;
     height: 40px;
 
@@ -1141,7 +1138,7 @@ screen and (min-resolution: 2ddpx) and (min-widht: 1200px) {
     }
 }
 
-@media screen and (min-width:320px) {
+@media screen and (min-width:480px) {
 
     /*hero*/
     .hero-text {
@@ -1296,6 +1293,7 @@ screen and (min-resolution: 2ddpx) and (min-widht: 1200px) {
     .subckribe-form {
         display: flex; 
        gap: 24px; 
+       
     }
     .subscribe-input {
        width: 264px; }
@@ -1323,6 +1321,9 @@ screen and (min-resolution: 2ddpx) and (min-widht: 1200px) {
     .contacts {
         display: flex;
     }
+    .contact-adress {
+        font-size: 16px;
+    }
     
     .navigation-list {
         margin-left: 76px;
@@ -1330,7 +1331,7 @@ screen and (min-resolution: 2ddpx) and (min-widht: 1200px) {
     }
     
     .header {
-        padding-bottom: 24px;
+        padding-bottom: 28px;
     }
     /*hero*/
     .hero-main {
