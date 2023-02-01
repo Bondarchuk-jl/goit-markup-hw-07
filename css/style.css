@@ -96,7 +96,7 @@ ul {
 
 .navigation-item {
     margin-right: 40px;
-    /* margin-left: auto; */
+    margin-left: auto;
 }
 .navigation-item:last-child {
     margin-right: 0;
@@ -116,6 +116,7 @@ ul {
 
 .contacts {    
     /* display: flex; */
+    margin-left: auto;
 }
 
 .navigation-contacts{
@@ -988,6 +989,7 @@ ul {
 .subckribe-form {
     /* display: flex; */
     /* gap: 24px; */
+   
 }
 
 .subscribe-text {
@@ -1023,7 +1025,7 @@ ul {
 }
 
 .subscribe-buttom {
-    display: block;
+   display: block;
     position: relative;
     font-family: inherit;
     font-weight: 500;
@@ -1044,7 +1046,7 @@ ul {
     padding-bottom: 8px;
     padding-left: 24px;
     padding-right: 64px;
-
+    
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -1100,10 +1102,16 @@ screen and (min-resolution: 2ddpx) and (min-widht: 1200px) {
     .tehnology {
         padding-bottom: 96px;
     }
-    .tehnology-list {
+    /* .tehnology-list {
             display: grid;
             gap: 72px;
-        }
+        } */
+    .tehnology-item {
+        margin-bottom: 72px;
+    }
+    .tehnology-item:last-child{
+        margin-bottom: 0px;
+    }
     
     .tehnology-item {
             /* padding-bottom: 72px;
@@ -1126,6 +1134,9 @@ screen and (min-resolution: 2ddpx) and (min-widht: 1200px) {
     /*subskribe*/
     .subscribe-buttom {
         margin-top: 16px;
+    }
+    .subskribe {
+        margin-top: 72px;
     }
 
     
@@ -1182,9 +1193,9 @@ screen and (min-resolution: 2ddpx) and (min-widht: 1200px) {
     /* FOOTER*/
 
     /*subskribe*/
-    .subscribe {
+    /* .subscribe {
         margin-top: 72px;
-    }
+    } */
     /*Portfolio*/
     .portfolio-navigation {
         padding-top: 48px;
