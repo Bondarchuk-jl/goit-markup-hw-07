@@ -435,25 +435,12 @@ ul {
     max-width: 1440px;
     margin-right: auto;
     margin-left: auto;
-    
     background-image:var(--linear-gradient),
-     url(../images/people-office.jpg);
+     url(../images/hero-bg-mob-1x.jpg);
     background-color: var(--maintext-color);
     background-repeat: no-repeat;
     background-size: cover;
     background-position:  center;
-}
-
-@media screen and (min-width:768px){
-    .overlay {
-            background-image: var(--linear-gradient),
-                url(../images/people-office.jpg);
-        }
-}
-@media screen and (min-width: 1200px) {
-    .overlay {
-        background-image: var(--linear-gradient),
-            url(../images/people-office.jpg);}
 }
 
 /* в єлементе до  контента. афтер после контенка*/
@@ -1329,6 +1316,19 @@ screen and (min-resolution: 2ddpx) and (min-widht: 1200px) {
     .app-item {
         width: 356px; 
     }
+    /*image*/
+    .overlay {
+             background-image: var(--linear-gradient),
+                 url(../images/hero-bg-tab-1px.jpg);
+         }
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .overlay {
+        background-image: var(--linear-gradient),
+        url(../images/hero-bg-tab-2x.jpg);
+        }
+    }
    
 }
 
@@ -1438,6 +1438,21 @@ screen and (min-resolution: 2ddpx) and (min-widht: 1200px) {
     .app-item {
         width: 360px;
     }
+    /*image*/
+    .overlay {
+        background-image: var(--linear-gradient),
+        url(../images/hero-bg-desktop-1x.jpg);
+    }
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .overlay {
+        background-image: var(--linear-gradient),
+        url(../images/hero-bg-decktop-2x.jpg);
+        }
+    }
+
+         
 
  }
  
