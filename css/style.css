@@ -1183,6 +1183,15 @@ screen and (min-resolution: 2ddpx) and (min-widht: 1200px) {
         padding-top: 48px;
         padding-bottom: 48px;
     }
+    /*images*/
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            .overlay {
+                background-image: var(--linear-gradient),
+                    url(../images/hero-bg-mob-2x.jpg);
+            }
+        }
     
 }
 
