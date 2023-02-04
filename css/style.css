@@ -91,8 +91,6 @@ ul {
 
 .navigation-list { 
     display: flex ;
-    /* margin-left: 76px;
-    margin-right: 332px; */
 }
 
 .navigation-item {
@@ -117,7 +115,6 @@ ul {
 }
 
 .contacts {    
-    /* display: flex; */
     margin-left: auto;
 }
 
@@ -149,9 +146,6 @@ ul {
 
 .hero-main{ 
     background: var(--maintext-color);
-    /* text-align: center;
-    padding-top:188px  ;
-    padding-bottom: 188px;  */
     padding-right: 42px;
     padding-left: 42px;
     text-align: center;
@@ -161,15 +155,10 @@ ul {
 
 .hero-text {
     font-weight: 700;
-    /* font-size: 56px; */
     font-size: 36px;
     line-height: 1.07;
-    /* width: 318px; */
     margin-top: 0;
     margin-bottom: 72px;
-    /* margin-bottom: 48px; */
-    /* padding-right: 317px;
-    padding-left: 317px; */
     text-align: start;
     justify-content: center;
     color: var(--main-color);
@@ -224,33 +213,26 @@ ul {
     color: var(--maintext-color);
     margin-bottom: 8px;
 }
-.tehnology-text {
-}
+/* .tehnology-text {
+} */
 
 .tehnology-paragraph {
     font-weight: 400;
     color: var(--gray-color);
 }
 
-.tehnology-list {
-   /* display: flex;*/
-}
+/* .tehnology-list {
+} */
 
-.tehnology-item {
-    /*margin-right: 24px; 
-    width: 264px; */
-    /* padding-top: 72px; */
-}
+/* .tehnology-item {
+} */
 .tehnology-item:last-child {
     margin-right: 0;
 }
 /* section work*/
 
 .work {
-    /* padding-top: 120px; */
     padding-bottom: 120px;
-    /*padding-top: 100px;
-    padding-bottom: 100px;*/
 }
 
 .work-maintext,
@@ -287,10 +269,8 @@ ul {
     margin-bottom: 72px;
 }
 
-.about-list {
-    /* display: flex; */
-   
-}
+/* .about-list {
+} */
 
 .about-item {
     background:var(--main-color);
@@ -316,15 +296,12 @@ ul {
    
 }
 /*--Page portoflio--*/
-/*  Section portfolio navigation*/
 
-/*.portfolio-hero {}*/
+/*.portfolio-hero {
+}*/
 
-.portfolio-navigation {
-    /* padding-bottom: 72px;
-    padding-top: 92px; */
-    
-}
+/* .portfolio-navigation {
+} */
 
 .portfolio-navigation-list {
     display: flex;
@@ -679,8 +656,6 @@ ul {
 
 .modal {
     position: absolute ;
-    /* top: 88px;
-    left: 516px; */
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -899,7 +874,6 @@ ul {
     font-weight: 500;
     letter-spacing: 0.04em;
    
-    
     cursor: pointer;
     width: 169px;
     height: 56px;
@@ -1118,7 +1092,6 @@ ul {
     color: #4D5AE5;
 }
 
-
 .mob-contacts {
     margin-bottom: 48px;
 }
@@ -1162,13 +1135,6 @@ ul {
 }
 /*Адаптивная верстка*/
 
-/* @media screen and (min-device-pixel-ratio: 2) and (min-widht: 1200px),
-screen and (min-resolution: 192dpi) and (min-widht: 1200px),
-screen and (min-resolution: 2ddpx) and (min-widht: 1200px) {
-    .banner {
-        background-image: url(-desctop);
-    }
-} */
 @media screen  and (max-width: 1199px){
     .work {
         display: none;
@@ -1183,7 +1149,8 @@ screen and (min-resolution: 2ddpx) and (min-widht: 1200px) {
         text-align: center;
     }
 }
-@media screen and (min-width:320px) and (max-width: 767px) {
+@media screen and (max-width: 767px) {
+   
     /*header*/
      .navigation-list {
         display: none;
@@ -1192,10 +1159,7 @@ screen and (min-resolution: 2ddpx) and (min-widht: 1200px) {
         display: none;
     }
 
-    /*hero*/
-    
     /*tehnology*/
-   
     .tehnology-item {
         margin-bottom: 72px;
     }
@@ -1204,7 +1168,6 @@ screen and (min-resolution: 2ddpx) and (min-widht: 1200px) {
     }
     
     /*customers*/
-    
     .customers-list {
         display: flex;
         flex-wrap: wrap;
@@ -1240,11 +1203,13 @@ screen and (min-resolution: 2ddpx) and (min-widht: 1200px) {
 }
 
 @media screen and (min-width:480px) {
+
     .container {
         width: 428px;
         /*width: 100%;
         margin:0 auto;*/
     }
+
     /*hero*/
     .hero-text {
         font-size: 36px;
@@ -1256,6 +1221,7 @@ screen and (min-resolution: 2ddpx) and (min-widht: 1200px) {
     .about > .container {
         width: 294px;
     }
+
     /*tehnology*/
     .tehnology {
         padding-bottom: 96px;
@@ -1270,10 +1236,6 @@ screen and (min-resolution: 2ddpx) and (min-widht: 1200px) {
         display: flex;
     }
    
-    /* FOOTER*/
-
-    /*subskribe*/
-    
     /*Portfolio*/
     .portfolio-navigation {
         padding-top: 48px;
@@ -1308,6 +1270,7 @@ screen and (min-resolution: 2ddpx) and (min-widht: 1200px) {
     .current::before {
         top: 37px;
     }
+
     /*hero*/
     .hero-main {
         padding-bottom: 108px;
@@ -1319,6 +1282,7 @@ screen and (min-resolution: 2ddpx) and (min-widht: 1200px) {
         padding-left: 121px;
         padding-right: 121px;
     }
+
     /*tehnology*/
     .tehnology{
         padding-bottom: 96px ;
@@ -1357,8 +1321,8 @@ screen and (min-resolution: 2ddpx) and (min-widht: 1200px) {
         flex-wrap: wrap;
         justify-content: center;
     }
-
-        /* FOOTER*/
+    
+    /* FOOTER*/
     .footersec {
     display: flex; 
     justify-content: center;
@@ -1393,11 +1357,10 @@ screen and (min-resolution: 2ddpx) and (min-widht: 1200px) {
        display: flex; 
        flex-wrap: wrap;
        justify-content: center;
-      
-   }
+    }
    .footersoc-text {
        text-align: start;
-   }
+    }
 
     /*subskribe*/
     .subckribe-form {
@@ -1414,12 +1377,12 @@ screen and (min-resolution: 2ddpx) and (min-widht: 1200px) {
         padding-top: 64px;
         padding-bottom: 96px;
     }
-         .portfolio-navigation-list {
-             display: flex;
-             flex-wrap: unset;
-             justify-content: center;
-             align-items: center;
-         }
+    .portfolio-navigation-list {
+        display: flex;
+        flex-wrap: unset;
+        justify-content: center;
+        align-items: center;
+    }
     .app-list {
         justify-content: space-between;
         flex-wrap: wrap;
@@ -1429,9 +1392,9 @@ screen and (min-resolution: 2ddpx) and (min-widht: 1200px) {
     }
     /*image*/
     .overlay {
-             background-image: var(--linear-gradient),
-                 url(../images/hero-bg-tab-1px.jpg);
-         }
+        background-image: var(--linear-gradient),
+        url(../images/hero-bg-tab-1px.jpg);
+    }
     @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
@@ -1448,7 +1411,6 @@ screen and (min-resolution: 2ddpx) and (min-widht: 1200px) {
     .mob-menu {
         display: none;
     }
-   
 }
 
 @media screen and (min-width:1199px) {
@@ -1474,7 +1436,6 @@ screen and (min-resolution: 2ddpx) and (min-widht: 1200px) {
         top: 49px;
     }
     
-   
     /*hero*/
     .hero-main {
         text-align: center;
@@ -1509,7 +1470,6 @@ screen and (min-resolution: 2ddpx) and (min-widht: 1200px) {
     .about {
         padding-top: 120px;
         padding-bottom: 120px;
-        
     }
     .about > .container {
         width: 1199px;
@@ -1571,9 +1531,6 @@ screen and (min-resolution: 2ddpx) and (min-widht: 1200px) {
         url(../images/hero-bg-decktop-2x.jpg);
         }
     }
-
-         
-
  }
  
  
