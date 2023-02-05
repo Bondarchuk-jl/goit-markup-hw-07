@@ -146,8 +146,8 @@ ul {
 
 .hero-main{ 
     background: var(--maintext-color);
-    padding-right: 42px;
-    padding-left: 42px;
+    /* padding-right: 42px;
+    padding-left: 42px; */
     text-align: center;
     padding-top: 112px;
     padding-bottom: 112px;
@@ -155,7 +155,7 @@ ul {
 
 .hero-text {
     font-weight: 700;
-    font-size: 36px;
+    font-size: 30px;
     line-height: 1.07;
     margin-top: 0;
     margin-bottom: 72px;
@@ -590,7 +590,7 @@ ul {
     margin-top: 16px;
     width: 264px;
     height: 72px;
-    margin-bottom: 72px;
+    /* margin-bottom: 72px; */
     margin-right: auto;
     margin-left: auto;
     text-align: start;
@@ -652,6 +652,7 @@ ul {
     background: rgba(46, 47, 66, 0.4);
     transition: opacity 250ms linear, 
     visibility 250ms linear;
+    
 }
 
 .modal {
@@ -659,9 +660,9 @@ ul {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-
-    width: 408px;
-    min-height: 576px;
+   
+    max-width: 408px;
+    height: 576px;
     
     opacity: 1;
     border-radius: 4px;
@@ -670,6 +671,7 @@ ul {
     0px 2px 1px rgba(0, 0, 0, 0.2);
     /* transform:  scale(1); */
     transition: transform 250ms linear;
+    overflow: auto;
 }
 .modal-close { 
     position: absolute;
@@ -684,7 +686,7 @@ ul {
     height: 24px;
     cursor: pointer;
     border-radius: 50%;
-    
+    overflow: auto;
     background-color: var(--bord-color);
     border: 1px solid rgba(0, 0, 0, 0.1);
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -746,12 +748,14 @@ ul {
 
 .modal-form {
     width: 100%;
+    
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 0;
     padding-left: 24px;
     padding-right: 24px;
     padding-bottom: 24px;
+    
 }
 .form-field {
     justify-content: center;
@@ -773,7 +777,8 @@ ul {
 .form-input {
     display: flex;
     justify-content: center;
-    width: 360px;
+    /* width: 360px; */
+    width: 100%;
     height: 40px;
     font-size: 16px;
     margin-bottom: 8px;
@@ -928,7 +933,7 @@ ul {
 /*Subckribe секція у футері*/
 
 .subscribe {
-    margin-top: 72px ;
+    /* margin-top: 72px ; */
 }
 
 /* .subckribe-form {
@@ -1024,6 +1029,7 @@ ul {
     height: 100vh;
     background-color: #fff;
     padding: 40px;
+    
 }
 .menu-close {
     display: flex;
@@ -1108,15 +1114,16 @@ ul {
 }
 .mob-soc-list {
     display: flex;
+    justify-content: space-between;
    
 }
 .mob-soc-item{
     height: 40px;
     width: 40px;
 }
-.mob-soc-item:not(:last-child){
+/* .mob-soc-item:not(:last-child){
     margin-right: 56px;
-}
+} */
 .mob-soc-link {
     display: flex;
     width: 100%;
@@ -1147,6 +1154,10 @@ ul {
         font-weight: 700;
         font-size: 36px;
         text-align: center;
+    }
+    /*footer*/
+    .footer-paragraph {
+        margin-bottom: 72px;
     }
 }
 @media screen and (max-width: 767px) {
@@ -1192,6 +1203,10 @@ ul {
     .subskribe {
         margin-top: 72px;
     }
+    /*footer*/
+    .footer-soc {
+        margin-bottom: 72px;
+    }
     /*PORTFOLIO*/
     .portfolio-navigation{
         padding-bottom: 48px;
@@ -1202,7 +1217,7 @@ ul {
        
 }
 
-@media screen and (min-width:480px) {
+@media screen and (min-width:428px) {
 
     .container {
         width: 428px;
@@ -1303,11 +1318,11 @@ ul {
         font-size: 36px;
         text-align: start;
     }
-
-    /*our team*/
-    .about > .container {
+.about > .container {
         width: 584px;   
     }
+    /*our team*/
+    
     .about {
         padding-bottom: 104px;
     }
@@ -1323,9 +1338,16 @@ ul {
     }
     
     /* FOOTER*/
+    .footer > .container {
+        width: 584px;
+    } 
+    .footer {
+        padding-bottom: 96px;
+    }
     .footersec {
-    display: flex; 
-    justify-content: center;
+        display: flex;
+        flex-wrap: wrap;
+    
     }
     .footer-logosec {
         text-align: start;
@@ -1334,8 +1356,9 @@ ul {
     .footer-soc {
         margin-left: 24px; 
     }
-    .footer-paragraph{
-        margin-bottom: 72px;
+
+    .footersoc-text {
+        text-align: start;
     }
     /*customers*/
     .customers > .container {
@@ -1352,18 +1375,10 @@ ul {
     .customers-item {
         flex-basis: calc((100% - 48px) / 3);
     }
-   /*footer*/
-   .footersec {
-       display: flex; 
-       flex-wrap: wrap;
-       justify-content: center;
-    }
-   .footersoc-text {
-       text-align: start;
-    }
-
+  
     /*subskribe*/
-    .subckribe-form {
+         
+    .subscribe-form {
         display: flex; 
         gap: 24px; 
        
@@ -1492,6 +1507,13 @@ ul {
     } 
     
     /* FOOTER*/
+         .footer>.container {
+             width: 1199px;
+         }
+         .footer {
+            padding-bottom: 100px;
+         }
+         
     .footersec {
         display: flex;
         justify-content: flex-start;
@@ -1504,7 +1526,7 @@ ul {
         margin-left: 80px; 
         margin-top: 0;
     }
-    .subckribe-form {
+    .subscribe-form {
         display: flex; 
         gap: 24px; 
     }
