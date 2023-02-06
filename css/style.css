@@ -661,9 +661,10 @@ ul {
     left: 50%;
     transform: translate(-50%, -50%);
    
-    max-width: 408px;
-    height: 576px;
-    
+    /* max-width: 408px;
+    height: 576px; */
+    max-width: 392px;
+    height: 586px;
     opacity: 1;
     border-radius: 4px;
     background: #FCFCFC;
@@ -1224,7 +1225,10 @@ ul {
         /*width: 100%;
         margin:0 auto;*/
     }
-
+    /*modal*/
+    .modal{
+        width: 408px;
+    }
     /*hero*/
     .hero-text {
         font-size: 36px;
@@ -1272,7 +1276,10 @@ ul {
     .container {
         width: 768px;
     }
-
+    /*modal*/
+        .modal {
+            max-width: 408px;
+        }
     /*header*/
     .header {
         padding-bottom: 10px;
